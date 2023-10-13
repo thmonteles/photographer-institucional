@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="src/css/style.css?v=2">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Importando o CSS do Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- Importando CSS do tema padrão do Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- ImportandoJS do Slick -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body  class="custom-background">
+    <div class="menu">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <div class="brand" href="#">StudioClick</div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Explorar
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Fotografias</a></li>
+                      <li><a class="dropdown-item" href="#">Comunidade</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-disabled="true">Fale Conosco</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <div class="card text-center bg-transparent border-0">
+            <div class="card-body">
+                <h1 class="card-title">
+                    <span class="word first-word">Câmera,</span>
+                    <span class="word">luz,</span>
+                    <span class="word">click!</span>
+                </h1>
+              <p class="card-text">Lentes que contam histórias: A arte da fotografia em cada clique.</p>
+            </div>
+          </div>
+            <div class="group">
+                <div id="img" class="img"><img src="src/img/photo.png" alt=""></div>
+                <div class="campo">
+                    <div class="frase">O diferencial </div>
+                    <div class="frase2">está no</div>
+                    <div class="foco">detalhe!</div>
+                </div>
+            </div>
+    </div>
+    <section id="cards">
+        <h1 class="explore">Explore nossa coleção única de produtos</h1>
+    <div id="update" class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button id="accordion-button" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <img class="edit" src="src/img/undraw_moments_0y20 (1).svg" width="80px" alt="">
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> Capturar experiências e destinos inesquecíveis ao redor do mundo.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button id="accordion-button" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <img src="src/img/undraw_optimize_image_re_3tb1.svg" alt="">
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Captura de fotos e serviços de edição de alta qualidade.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button id="accordion-button" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <img src="src/img/undraw_fashion_photoshoot_mtq8.svg" alt="">
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Sessões de fotos personalizadas.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button id="accordion-button" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFor" aria-expanded="false" aria-controls="flush-collapseThree">
+                <img src="src/img/undraw_photograph_re_up3b.svg" alt="">
+              </button>
+            </h2>
+            <div id="flush-collapseFor" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Workshops e aulas para entusiastas da fotografia com treinamento em técnicas avançadas.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button id="accordion-button" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                <img class="edit" src="src/img/undraw_photos_re_pvh3.svg" width="80px">
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Serviços de fotografia aérea usando drones para capturar imagens e paisagens.</div>
+          </div>
+      </div>
+    </div>
+        <section class="sec2">
+        <div class="diferenciais">
+            <div class="bloco" id="bloco1">
+                <img class="edit" src="src/img/undraw_moments_0y20 (1).svg" width="80px" alt="">
+                <div class="texto">
+                    <p>Capturar experiências e destinos inesquecíveis ao redor do mundo.</p>
+                </div>
+            </div>
+            <div class="bloco" id="bloco2">
+                <img src="src/img/undraw_optimize_image_re_3tb1.svg" alt="">
+                <div class="texto">
+                    <p>Captura de fotos e serviços de edição de alta qualidade.</p>
+                </div>
+            </div>
+            <div class="bloco" id="bloco3">
+                <img src="src/img/undraw_fashion_photoshoot_mtq8.svg" alt="">
+                <div class="texto">
+                    <p>Sessões de fotos personalizadas </p>
+                </div>
+            </div>
+            <div class="bloco" id="bloco4" style="display: none;">
+                <img src="src/img/undraw_photograph_re_up3b.svg" alt="">
+                <div class="texto">
+                    <p>Workshops e aulas para entusiastas da fotografia com treinamento em técnicas avançadas.</p>
+                </div>
+            </div>
+            <div class="bloco" id="bloco5" style="display: none;">
+                <img class="edit" src="src/img/undraw_photos_re_pvh3.svg" width="80px">
+                <div class="texto">
+                    <p>Serviços de fotografia aérea usando drones para capturar imagens e paisagens.</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="ler">
+            <button id="ler-mais">Ler Mais</button>
+            <button id="ler-menos" style="display: none;">Ler Menos</button>
+        </div>
+    </section>
+    <div class="fechar">
+        <img src="src/img/photo2.png" alt="">
+    </div>
+    </section>
+
+    <div class="detalhes">
+        <div class="conteudo">
+            <div class="bloco2">
+                <h4 class="descobrir">Descubra como nossas fotografias podem trazer emoção e vida a cada quadro.</h4>   
+            </div>
+            <div class="list"> 
+                <div class="item">
+                    <div class="icon"><i class="ph ph-cube-focus"></i></div>
+                    <div class="name"><p>Realidade Aumentada e Filtros Personalizados</p></div>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class="ph ph-aperture"></i></div>
+                    <div class="name"><p>Equipamentos fotográficos de última geração</p></div>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class="ph ph-image"></i></div>
+                    <div class="name"><p>Fotografia de Drone e Paisagens Aéreas</p></div>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class="ph ph-clock-clockwise"></i></div>
+                    <div class="name"><p>Entrega Rápida e Online</p></div>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class="ph ph-camera"></i></div>
+                    <div class="name"><p>Ensaios temáticos</p></div>
+                </div>
+          
+            </div>
+        </div>
+    </div>
+    <section id="central">
+        <div class="central">
+            <h1 class="cards">Olha só quem já passou com a gente</h1>
+        </div>
+            
+        <div class="avaliacoes">
+            <div class="card-avaliacao" >
+                <div id="card-avaliacao" class="card-body">
+                    <div class="header">
+                    <img src="src/img/undraw_profile_pic_re_iwgo.svg" alt="Avatar" class="avatar">
+                    <h5 class="card-title">Roberta</h5>
+                    </div>
+                  <p id="text" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-avaliacao" >
+                <div id="card-avaliacao" class="card-body">
+                    <div class="header">
+                        <img src="src/img/undraw_male_avatar_g98d.svg" alt="Avatar" class="avatar">
+                        <h5 class="card-title">Noah</h5>
+                      </div>
+                  <p id="text" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-avaliacao" >
+                <div id="card-avaliacao"  class="card-body">
+                    <div class="header">
+                        <img src="src/img/undraw_pic_profile_re_7g2h.svg" alt="Avatar" class="avatar">
+                        <h5 class="card-title">Heitor</h5>
+                    </div>
+                  <p id="text" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-avaliacao" >
+                <div id="card-avaliacao" class="card-body">
+                    <div class="header">
+                        <img src="src/img/undraw_female_avatar_efig.svg" alt="Avatar" class="avatar">
+                        <h5 class="card-title">Clarisse</h5>
+                    </div>
+                  <p id="text" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                  </div>
+                </div>
+              </div>
+        
+        </div>
+    </section>
+    
+        <h4 class="capturar">Permita-nos capturar a história da sua vida.</h4>
+        <div class="central">
+            <h1 class="ofertas">Conheça nossas ofertas do momento</h1>
+        </div>
+       
+        <div class="planos">
+
+            <div class="plan">
+
+                <div class="title">Premium</div>
+
+                <div class="elements">
+                <p>Perfeito para...</p>
+                <p>R$ 000,00 <span>ECONOMIZE X%</span></p>
+            <p  class="money">R$ 000,00 /mês</p>
+            <div class="check-group">
+                <div class="check">
+                    <div class="icone2"><i class="ph ph-check"></i></div>
+                    <div class="especificacao">detalhes</div>
+                </div>
+                <div class="check">
+                    <div class="icone2"><i class="ph ph-check"></i></div>
+                    <div class="especificacao">detalhes</div>
+                </div>
+                <div class="check">
+                    <div class="icone2"><i class="ph ph-check"></i></div>
+                    <div class="especificacao">detalhes</div>
+                </div>
+                <div class="check">
+                    <div class="icone2"><i class="ph ph-check"></i></div>
+                    <div class="especificacao">detalhes</div>
+                </div>
+                <div class="check">
+                    <div class="icone2"><i class="ph ph-check"></i></div>
+                    <div class="especificacao">detalhes</div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+             <div class="plan">
+
+                <div class="title">Premium</div>
+
+                <div class="elements">
+                <p>Perfeito para...</p>
+                <p>R$ 000,00 <span>ECONOMIZE X%</span></p>
+            <p  class="money">R$ 000,00 /mês</p>
+            <div class="check-group">
+                <div class="check">
+                    <div class="icone2"><i class="ph ph-check"></i></div>
+                    <div class="especificacao">detalhes</div>
+                </div>
+                <div class="check">
+                    <div class="icone2"><i class="ph ph-check"></i></div>
+                    <div class="especificacao">detalhes</div>
+                </div>
+                <div class="check">
+                    <div class="icone2"><i class="ph ph-check"></i></div>
+                    <div class="especificacao">detalhes</div>
+                </div>
+                <div class="check">
+                    <div class="icone2"><i class="ph ph-check"></i></div>
+                    <div class="especificacao">detalhes</div>
+                </div>
+                <div class="check">
+                    <div class="icone2"><i class="ph ph-check"></i></div>
+                    <div class="especificacao">detalhes</div>
+                </div>
+            </div>
+                </div>
+
+            </div>
+          
+        </div>
+    <footer class="end">
+        <div class="frase-footer">
+            <h3 class="conectar">Traga sua visão à vida.</h3>
+            <p class="contatos">Entre em contato conosco para agendar uma sessão única.</p>
+
+                <div class="contato">
+                    <div class="rede">
+                        <div class="rede-group">
+                            <i class="ph ph-whatsapp-logo"></i>
+                        </div>
+                    </div>
+                    <div class="rede">
+                        <div class="rede-group">
+                            <i class="ph ph-envelope-simple"></i>
+                        </div>
+                    </div>
+                </div>
+            <hr>
+        </div>
+    </footer>
+    <script src="src/script/script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300&family=Jost:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300&family=Jost:wght@100;200&family=Outfit:wght@100;200&display=swap');
+*{
+    margin: 0;
+}
+body.custom-background{
+  background-color: black;
+  background-image: url("../img/pexels-vlad-bagacian-1251299.jpg");
+  background-size: cover; /* Faz a imagem cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem na tela */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.navbar li a{
+    color: #50ae74;
+    font-size: 19px;
+}
+.navbar li a:hover{
+    color: #277ea4;
+}
+.brand{
+    color: white;
+}
+.avaliacoes{
+    max-width: 1100px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    margin: 20px auto;
+}
+.word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(1em);
+    animation: write 1.5s forwards;
+}
+
+@keyframes write {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.star{
+    color: rgb(39, 157, 69);
+}
+
+.list .item:first-child{
+    width: 500px;
+    margin-left: -35px;
+}
+.list .item:nth-child(2){
+    width: 455px;
+    margin-left: 30px;
+}
+.list .item:nth-child(3){
+    width: 410px;
+    margin-left: 50px;
+}
+.list .item:nth-child(4){
+    margin-left: 30px;
+    width: 285px;
+    margin-left: 27px;
+}
+.list .item:nth-child(5){
+    width: 235px;
+    margin-left: -28px;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    margin: 15px;
+    height: 70px;
+    border-left: 2px double #63a3bf;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+.list .item {
+    opacity: 0; 
+    transform: translateY(20px); /* Deslocamento para baixo */
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+.list .item.active {
+    opacity: 1; 
+    transform: translateY(0); /* Deslocamento para a posição original */
+}
+.name{
+    font-size: 20px;
+    margin-top: 17px;
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+.avatar{
+    margin-top: -7px;
+    width: 50px;
+    margin-right: 10px;
+}
+.comentario{
+    margin-top: 13px;
+    width: 270px;
+    text-justify: justify;
+}
+.rating{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.3rem;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar{
+    width: 56px;
+}
+.group{
+    margin-left: 200px;
+}
+.group, .campo{
+    margin-top: 50px;
+}
+.img img{
+    margin-top: -30px;
+    margin-left: -100px;
+}
+.frase, .frase2{
+    width: 400px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+.frase2{
+    margin-left: 30px;
+}
+.foco{
+    font-size: 50px;
+    margin-left: 130px;
+    margin-top: -65px;
+    font-weight: 600;
+    color: #277ea4;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color:  #63a3bf;
+    width: 40px;
+    height: 40px;
+    border-radius: 28px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+.fechar{
+    display: flex;
+    justify-content: center;
+    margin-left: 600px;
+}
+
+.pilares{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-bottom: 2.5rem;
+}
+.pilar{
+    display: flex;
+    justify-content: center;
+    margin: 15px ;
+    padding: 0.7rem;
+    width: 500px;
+}
+.pilar-group{
+    display: flex;
+    justify-content: center;
+}
+.traco{
+    color: #448f61;
+}
+
+.descobrir{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    color: rgb(11, 11, 11);
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+}
+.ofertas{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: #268c4d;
+}
+.planos{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.check{
+    display: flex;
+}
+.plan{
+    border: 1px solid #268c4d;
+    border-radius: 9px;
+    padding: 1rem;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+.money{
+    padding-bottom:12px ;
+    border-bottom: 1px solid green ;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    position: relative;
+    padding: 0.2rem;
+    border-radius: 23px;
+    margin-top: -35px;
+    color: white;
+    background-color: #268c4d;
+    cursor: pointer;
+}
+.title::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #268c4d;
+}
+.elements{
+    margin-top: 30px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 170px;
+    color: #448f61;
+}
+.card-avaliacao{
+    margin: 15px;
+    margin-top: 180px;
+    opacity: 0;
+    transform: translateY(10px); 
+    transition: 0.2s;
+}
+#card-avaliacao{
+    background-color: #a9a8a8;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+.card-avaliacao.animate {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.card{
+    margin-top: 250px;
+}
+.card-body{
+    background-color: transparent;
+    margin-top: -100px;
+}
+h1.card-title{
+    color: rgb(21, 241, 76);
+    font-weight: 600;
+    font-size: 60px;
+}
+.detalhes{
+    display: flex;
+    justify-content: center;
+    background-color: #0b0d0e;
+    background-image:url("../img/pexels-pixabay-371829.jpg");
+    margin-top: 100px;
+}
+
+.bloco2{
+    margin-top: 140px;
+    padding: 2rem;
+    width: 200px;
+}
+.list{
+    padding: 2rem;
+    position: relative;
+}
+.capturar{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+.explore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 240px;
+    color: #448f61;
+}
+
+.card-text{
+    font-size: 23px;
+    color: rgb(152, 151, 151);
+    padding: 0.5rem;
+    margin-top: 10px;
+    font-family: 'Jost', sans-serif;
+}
+#text{
+    color: rgb(88, 88, 88);
+}
+.diferenciais{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 20px;
+    padding: 5rem;
+    border-radius: 4rem;
+}
+.ler{
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+}
+.ler button{
+    border: none;
+    background-color: #0d9712;
+    color: #d1d4d4;
+    padding: 0.6rem;
+    width: 150px;
+    border-radius: 19px;
+}
+.bloco {
+    display: flex;
+    align-items: center;
+    max-width: 280px;
+    padding: 1rem;
+    height: 300px;
+    margin: 25px;
+    border-radius: 9px;
+    background-color: #a9a8a8;
+    box-shadow: 0px 25px 15px 5px rgba(101, 105, 103, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bloco:hover{
+    transform: scale(1.1);
+    background-color: #f9f9f9;
+}
+.bloco img{
+   
+    margin: 25px;
+}
+.texto{
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #0d9712;
+}
+.edit {
+    width: 100px;
+}
+img{
+    width: 150px;
+}
+.form-control.me-2:focus {
+    border-color: #268c4d; 
+    background-color: #d1d4d4;
+    color: rgb(11, 11, 11);
+    box-shadow: 0 0 0 0.2rem rgba(56, 183, 102, 0.25); 
+}
+.sec2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.end {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right,  black, rgb(42, 77, 45),  black);
+    margin-top: 100px;
+    width: 100%;
+    padding: 4rem;
+}
+.contato{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.contatos{
+    padding: 0.3rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    color: #9e9ea0;
+}
+.rede{
+    display: flex;
+    align-items: center;
+    background-color: #0b0d0e;
+    margin: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 19px;
+}
+.rede i{
+    padding: 0.5rem;
+    color: white;
+}
+.rede-group{
+    display: flex;
+    align-items: center;
+    display: flex;
+}
+.rede-group i{
+    font-size: 24px; /* Defina o tamanho desejado para o ícone */
+    margin-right: 10px;
+}
+.numero {
+    margin-top: 40px;
+    font-size: 16px; 
+}
+.efeito{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#update{
+    display: none;
+}
+h4{
+    font-size: 30px;
+    font-family: 'Outfit', sans-serif;
+}
+.conectar{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+@media (max-width: 1000px) {
+    #update{
+        margin-top: 100px;
+        display: block;
+    }
+    #accordion-button:not(.collapsed) {
+        background-color: #23a15c;
+        outline: none;
+    }
+    .accordion-header button:hover{
+        background-color: #268c4d;
+        border: 1px solid white;
+    }
+    .accordion-item.show .accordion-header {
+        background-color: #333; /* Cor de fundo do cabeçalho quando aberto */
+        color: #fff; /* Cor do texto do cabeçalho quando aberto */
+    }
+    
+    /* Alterar a cor do texto do corpo quando o accordion-item está aberto */
+    .accordion-item.show .accordion-body {
+        color: #333; /* Cor do texto do corpo quando aberto */
+    }
+    .diferenciais {
+        display: none;
+    }
+     .ler{
+        display: none;
+     }
+
+}
+
+@media (max-width: 500px) {
+    .brand{
+        font-size: 19px;
+    }
+    .detalhes{
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+    }
+    .navbar li a {
+        font-size: 16px; 
+    }
+    .img{
+        max-width: 100%; 
+        height: auto;
+        margin-left: 110px;
+        margin-top: -55px;
+    }
+    .group{
+        margin-top: 100px;
+        margin-left: 40px;
+    }
+    #img img{
+        width: 70px;
+        margin-left: -140px;
+    }
+    .fechar{
+        margin-left: 30px;
+    }
+    .fechar img {
+        width: 70px;
+        margin-left: 230px;
+        margin-top: 25px;
+        
+    }
+    
+    .frase, .frase2{
+        max-width: 200px;
+    }
+    .conteudo{
+        margin-top: -300px;
+    }
+    .list{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 400px;
+        padding: 0;
+    }
+    .item{
+        border: none;
+        height: 28px;
+        padding: 1rem;
+        max-width: 370px;
+    }
+    .list .item:first-child{
+        width: 500px;
+        margin-left: 3px;
+    }
+    .list .item:nth-child(2){
+        width: 455px;
+        margin-left: 3px;
+    }
+    .list .item:nth-child(3){
+        width: 410px;
+        margin-left: -6px;
+    }
+    .list .item:nth-child(4){
+        width: 285px;
+        margin-left: -18px;
+    }
+    .list .item:nth-child(5){
+        width: 235px;
+        margin-left: -15px;
+    }
+    .icon{
+        font-size: 18px;
+        height: 34px;
+        width: 34px;
+        margin-top: -16px;
+    }
+    .name{
+        font-size: 17px;
+        margin-top: -2px;
+    }
+    .cards{
+        color: white;
+        font-size: 24px;
+    }
+    .explore{
+        margin-top: 90px;
+        font-size: 30px;
+        margin-left: 25px;
+    }
+    .descobrir{
+        width: 360px;
+        margin-top: 0;
+        margin-left: -10px;
+    }
+    .card-body{
+        margin-top: -180px;
+    }
+    .click{
+        margin-top: 100px;
+    }
+    .campo{
+        margin-left: -10px;
+        min-width: 10px;
+    }
+    .foco{
+        font-size: 50px;
+    }
+    .central{
+        margin-left: 28px;
+    }
+    .bloco2{
+        margin-top: 300px;
+    }
+    .plan{
+        width: 400px;
+    }
+    .avaliacoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        margin-top: -60px;
+    }
+    #card-avaliacao{
+        margin-top: 10px;
+        width: 100%;
+    
+    }
+   
+  }
